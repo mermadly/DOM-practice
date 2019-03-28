@@ -134,17 +134,19 @@ header {
     border-radius: 100%;
   }
 
-.comments {
+.comment {
       display: flex;
       align-items: center;
+      width: 100%;
   }
 
-.comments p {
+.comment p {
     font-weight: 600;
+    margin: 10px;
     margin-left: 15px;
 }
 
-.comment {
+.addcomment {
     border-top: 1px solid #ebebeb;
     width: 92%;
     margin: auto;
@@ -152,16 +154,20 @@ header {
 
 input {
       border: none;
-      height: 50px;
-      margin: 15px;
+      margin-left: 15px;
   }
+
+.addcomment {
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
 
 .username {
     font-weight: 600;
     display: flex;
     align-items: center; 
     justify-content: flex-start;
-    padding: 15px;
 
 }
 
@@ -171,4 +177,14 @@ input {
 
 #likes {
     margin-left: 15px;
+}
+
+.likeam {
+  margin-left: 15px; 
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+p {
+  margin: 0px;
 }

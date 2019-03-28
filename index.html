@@ -1,22 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Instagram</title>
-    <link rel="stylesheet" href="ig.css">    
+    <link rel="stylesheet" href="ig.css">
     <link rel="shortcut icon" href="img/igfavicon.png" type="image/x-icon" />
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet"><link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,300" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
 </head>
+
 <body>
-     <header>
+    <header>
         <a href="index.html" class="index">
-                <i class="fab fa-instagram fa-lg"></i>
+            <i class="fab fa-instagram fa-lg"></i>
             <div class="logo"><img src="img/instagramlogo.png" alt=""></div>
         </a>
-        <div class="search"><i class="fas fa-search fa-sm"></i><p> Search</p></div>
+        <div class="search"><i class="fas fa-search fa-sm"></i>
+            <p> Search</p>
+        </div>
         <ul class="list">
             <li><a href="AboutUs.html"><i class="far fa-compass fa-lg"></i></a></li>
             <li><a href="portfolio.html"><i class="far fa-heart fa-lg"></i></a></li>
@@ -25,36 +31,60 @@
         </ul>
     </header>
 
-    <div class = "container">
+    <div class="container">
         <div class="card">
-            <div class="username"><img src="img/ponyuser.jpg" alt=""><p>ponysmakeup</p></div>
-            <div class="img"><img src ="img/ponymkup.jpg"></div>
-            <div class="interact"> <i onclick="fillHeart(this)" class="far fa-heart fa-lg"> <i class="far fa-comment fa-md"></i></i> </div>
-            <div><span class="likes">0</span> likes</div>
-            <div class="description"></div>
-            <div class="comments"><p>username</p><input value="Beautiful ♥"></input></div>
-            <div class="comment"><input onclick="comment()" placeholder="Add a comment..."></input></div>
+            <div>
+                <div class="username"><img src="img/ponyuser.jpg" alt="">
+                    <p>ponysmakeup</p>
+                </div>
+                <div class="img"><img src="img/ponymkup.jpg"></div>
+                <div class="interact"> <i onclick="fillHeart(this)" class="far fa-heart fa-lg"> <i
+                            class="far fa-comment fa-md"></i></i> </div>
+                <div class="likeam"><span class="likes">0</span> likes</div>
+                <div class="description"></div>
+                <div class="commentSection">
+                    <div class="comment">
+                        <p>username</p><input value="Beautiful ♥"></input>
+                    </div>
+                </div>
+                <div class="addcomment"><input onclick="comment(this)" placeholder="Add a comment..."></input></div>
+            </div>
         </div>
         <div class="card">
-            <div class="username"><img src="img/origamiuser.jpg" alt=""><p>origami.shiba</p></div>
-            <div class="img"><img src ="img/origamishiba.jpg"></div>
-            <div class="interact"> <i onclick="fillHeart(this)" class="far fa-heart fa-lg"> <i class="far fa-comment fa-md"></i></i> </div>
+            <div class="username"><img src="img/origamiuser.jpg" alt="">
+                <p>origami.shiba</p>
+            </div>
+            <div class="img"><img src="img/origamishiba.jpg"></div>
+            <div class="interact"> <i onclick="fillHeart(this)" class="far fa-heart fa-lg"> <i
+                        class="far fa-comment fa-md"></i></i> </div>
             <div><span class="likes">0</span> likes</div>
             <div class="description"></div>
-            <div class="comments"><p>username</p><input value="♥"></input></div>
-            <div class="comment"><input placeholder="Add a comment..."></input></div>
+            <div class="commentSection">
+                <div class="comment">
+                    <p>username</p><input value="♥"></input>
+                </div>
+            </div>
+            <div class="addcomment"><input onclick="comment(this)" placeholder="Add a comment..."></input></div>
         </div>
         <div class="card">
-            <div class="username"><img src="img/magicaluser.jpg" alt=""><p>magicalfay</p></div>
-            <div class="img"><img src ="img/magicalfay.jpg"></div>
-            <div class="interact"> <i onclick="fillHeart(this)" class="far fa-heart fa-lg"> <i class="far fa-comment fa-md"></i></i> </div>
+            <div class="username"><img src="img/magicaluser.jpg" alt="">
+                <p>magicalfay</p>
+            </div>
+            <div class="img"><img src="img/magicalfay.jpg"></div>
+            <div class="interact"> <i onclick="fillHeart(this)" class="far fa-heart fa-lg"> <i
+                        class="far fa-comment fa-md"></i></i> </div>
             <div><span class="likes">0</span> likes</div>
             <div class="description"></div>
-            <div class="comments"><p>username</p><input value="♥"></input></div>
-            <div class="comment"><input placeholder="Add a comment..."></input></div>
+            <div class="commentSection">
+                <div class="comment">
+                    <p>username</p><input value="♥"></input>
+                </div>
+            </div>
+            <div class="addcomment"><input onclick="comment(this)" placeholder="Add a comment..."></input></div>
         </div>
     </div>
 
-<script type="text/javascript" src="ig.js"></script>
+    <script type="text/javascript" src="ig.js"></script>
 </body>
+
 </html>

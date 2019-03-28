@@ -11,17 +11,19 @@ function fillHeart(fill) {
     }
     
     fill.classList.toggle('fas')
+    fill.classList.toggle ('red')
 }   
 
-function comment () {
-    console.log ('blah')
-    var prompt = prompt('Add a comment:', '')
-    var commentSt = document.querySelector('.card')
-    var newElement = document.createElement('div')
-    commentSt.appendChild(newElement)
-    newElement.classList.add ('comments')
-    newElement.appendChild('p')
-    newElement.children[0].innerHTML = 'username'
-    newElement.appendChild('input')
-    newElement.children[1].value = prompt
+function comment (e) {
+    var promptComment = prompt('Add a comment:', '')
+    var commentSt = document.querySelectorAll('.commentSection')    
+    var newDiv = document.createElement('div')
+    var newP = document.createElement('p')
+    var newInput = document.createElement('input')
+    commentSt[0].appendChild(newDiv)
+    newDiv.classList.add ('comment')
+    newDiv.appendChild(newP)
+    newDiv.children[0].innerHTML = 'username'
+    newDiv.appendChild(newInput)
+    newDiv.children[1].value = promptComment
 }
