@@ -18,9 +18,13 @@ body {
     border: 1px solid #ebebeb;
     width: 45vw;
     height: auto;
-    margin: 5vw 20vw 5vw 20vw;
+    margin: 0px 0px 60px 0px;
     background-color: white;
     border-radius: px;
+}
+
+.card:first-child {
+  margin-top: 30px;
 }
 
 header {
@@ -210,4 +214,34 @@ button {
 
 .blue {
   color: #3897f0;
+}
+
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen and (min-width: 320px) and (max-width: 800px) {
+  /* Styles */
+
+ header {
+   padding: 0px;
+   height: 52px;
+ }
+  .card {
+    width: 100%
+  }
+
+  .container {
+    padding: 50px;
+  }
+
+  ul {
+    padding-inline-start: 0px;
+  }
+
+  .line, .logo {
+    display: none;
+  }
+
+  .index {
+    margin: 15px;
+  }
 }

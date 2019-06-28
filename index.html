@@ -16,20 +16,24 @@
 
 <body>
     <header>
-        <a href="index.html" class="index">
-            <i class="fab fa-instagram fa-lg"></i>
-            <div class="line"></div>
-            <div class="logo"><img src="img/instagramlogo.png" alt=""></div>
-        </a>
+        <div>
+            <a href="index.html" class="index">
+                <i class="fab fa-instagram fa-lg"></i>
+                <div class="line"></div>
+                <div class="logo"><img src="img/instagramlogo.png" alt=""></div>
+            </a>
+        </div>
         <div class="search"><i class="fas fa-search fa-sm"></i>
             <p> Search</p>
         </div>
-        <ul class="list">
-            <li><a href="AboutUs.html"><i class="far fa-compass fa-lg"></i></a></li>
-            <li><a href="portfolio.html"><i class="far fa-heart fa-lg"></i></a></li>
-            <li><a href="testimonios.html"><i class="far fa-user fa-lg"></i></a></li>
+        <div>
+            <ul class="list">
+                <li><a href="AboutUs.html"><i class="far fa-compass fa-lg"></i></a></li>
+                <li><a href="portfolio.html"><i class="far fa-heart fa-lg"></i></a></li>
+                <li><a href="testimonios.html"><i class="far fa-user fa-lg"></i></a></li>
 
-        </ul>
+            </ul>
+        </div>
     </header>
 
     <div class="container">
@@ -47,7 +51,8 @@
                     <div class="comment">
                     </div>
                 </div>
-                <div class="addcomment"><input onclick="comment(this)" class="add" placeholder="Add a comment..."></input><button>Post</button></div>
+                <div class="addcomment"><input class="add" placeholder="Add a comment..." value="" onclick="selectInput()"></input><button
+                        onclick="comment()">Post</button></div>
             </div>
         </div>
         <div class="card">
@@ -64,7 +69,8 @@
                     <p>username</p><input value="♥"></input>
                 </div>
             </div>
-            <div class="addcomment"><input onclick="comment(this)" class="add" placeholder="Add a comment..."></input><button>Post</button></div>
+            <div class="addcomment"><input class="add" placeholder="Add a comment..."></input><button
+                    onclick="comment()">Post</button></div>
         </div>
         <div class="card">
             <div class="username"><img src="img/magicaluser.jpg" alt="">
@@ -80,7 +86,8 @@
                     <p>username</p><input value="♥"></input>
                 </div>
             </div>
-            <div class="addcomment"><input onclick="comment(this)" class="add" placeholder="Add a comment..."></input><button>Post</button></div>
+            <div class="addcomment"><input class="add" placeholder="Add a comment..."></input><button
+                    onclick="comment()">Post</button></div>
         </div>
     </div>
 
